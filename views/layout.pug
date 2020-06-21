@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= appTitle
+    script( src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+    link( rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous")
+    link(rel="stylesheet", href="/css/style.css")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+    script(type="text/javascript", src="/js/blog.js")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  body
+    #wrap
+      .container
+        h1.page-header= appTitle
+        p.lead Welcome to example from express.js Experience by&nbsp;
+          a(href="http://twitter.com/azat_co") @azat_co
+          |. Please enjoy.
+        block page
+        block header
+          div
+            //- include includes/menu
+        block alert
+          div.alert.alert-warning.hidden
+        .content
+          block content
+        block footer
+          footer
+            .container
+              p
+                | Copyright &copy; 2020 | Issues ? Submit to
+                a(href="https://github.com/jomavi-dev/blog-express/issues") Github
+                | .

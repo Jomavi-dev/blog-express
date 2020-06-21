@@ -1,0 +1,28 @@
+{
+  "name": "blog-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "seed": "sh ./db/seed.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "errorhandler": "1.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.5.9",
+    "mongoskin": "^2.1.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.0",
+    "serve-favicon": "^2.5.0",
+    "stylus": "^0.54.7"
+  }
+}
